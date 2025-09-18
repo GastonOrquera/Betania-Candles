@@ -16,3 +16,11 @@ candles.forEach((candle) => {
         }, 500); // mismo tiempo que tu animación
     });
 });
+
+let hamburger = document.querySelector(".hamburger");
+let navAll = document.querySelectorAll("header nav ul li a");
+
+hamburger.addEventListener('click', () => {
+
+
+});
