@@ -413,13 +413,27 @@ h1 {
 @media screen and (max-width: 520px) {
     .section-velas {
 
+        h4 {
+            font-size: 1rem;
+        }
+
+        .conteiner-candles {
+            a {
+                background-color: yellowgreen;
+                width: 100%;
+            }
+        }
+
+
+
         .candle {
-            width: 20rem;
+            /* background-color: yellow; */
+            width: 100%;
         }
 
         .img {
-            width: 8rem;
-            height: 8rem;
+            width: 10rem;
+            height: 10rem;
         }
 
     }
