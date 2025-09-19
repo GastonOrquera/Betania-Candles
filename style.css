@@ -91,7 +91,7 @@ a {
 /* main */
 
 .bg-main {
-    background-image: url(./img/WhatsApp\ Image\ 2025-09-17\ at\ 17.01.25.jpeg);
+    background-image: url(./img/bg-black.jpeg);
     width: 100%;
     height: 90vh;
     background-size: cover;
@@ -100,7 +100,7 @@ a {
 }
 
 .black {
-    background-color: rgba(250, 250, 250, 0.301);
+    background-color: rgba(255, 255, 255, 0.144);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -111,18 +111,30 @@ a {
     text-align: center;
     font-family: var(--font-secondary);
 
+    .logo {
+        background-color: rgba(255, 255, 255, 0.233);
+        border-radius: .4rem;
+    }
+
     .btn {
         font-size: 1.14rem;
         letter-spacing: 1px;
         text-transform: uppercase;
         font-family: var(--font-primary);
         margin-top: 1rem;
-        color: black;
+        color: rgb(255, 255, 255);
+        border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0.582);
+    }
+
+    p {
+        color: whitesmoke;
     }
 }
 
 h1 {
     letter-spacing: 1px;
+    color: white;
     font-family: var(--font-primary);
 }
 
@@ -374,7 +386,7 @@ h1 {
 
         .candle {
             padding: 1rem;
-            width: max-content;
+
         }
 
         .img {
@@ -413,6 +425,7 @@ h1 {
 
 
         nav {
+            display: none;
             background-color: rgb(235, 235, 235);
             width: 100%;
             position: absolute;
@@ -439,7 +452,9 @@ h1 {
             gap: 3px;
         }
 
-        .btn {}
+        .btn {
+            display: none;
+        }
 
         .btn.active {
             display: block;
