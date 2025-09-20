@@ -30,13 +30,23 @@ header {
 
         li {
             list-style: none;
+            padding: 1rem;
+
+        }
+
+        li:hover a {
+            border-bottom: 2px solid black;
+            transition: .3s ease-in-out;
         }
 
         a {
             font-size: 1.05rem;
+            border-bottom: 2px solid transparent;
         }
 
     }
+
+
 
     a {
         font-family: var(--font-primary);
@@ -114,6 +124,8 @@ a {
     .logo {
         background-color: rgba(255, 255, 255, 0.233);
         border-radius: .4rem;
+        /* border-top: 2px solid rgb(94, 66, 24); */
+        /* border-bottom: 2px solid rgb(94, 66, 24); */
     }
 
     .btn {
