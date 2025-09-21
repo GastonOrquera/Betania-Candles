@@ -291,6 +291,223 @@ h1 {
 }
 
 
+
+/* Seccion tipo C */
+
+.conteiner {
+    padding: 2rem;
+
+
+    .flex {
+        font-family: var(--font-primary);
+        display: flex;
+        gap: 1rem;
+
+        a {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            color: black;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            color: rgb(92, 92, 92);
+            transition: .3s ease-in-out;
+        }
+
+        hr {
+            border: 1px solid black;
+        }
+    }
+
+
+    .velas-conteiner {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        width: min-content;
+
+        .product {
+            background-color: rgb(235, 235, 235);
+            padding: 1rem;
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            border-radius: var(--border-radius);
+            border: 1px solid rgba(0, 0, 0, 0.116);
+        }
+
+        .box-candle {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        h3 {
+            font-family: var(--font-primary);
+            font-size: 1.3rem;
+            margin-bottom: .4rem;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-family: var(--font-secondary);
+        }
+
+        .btn-buy {
+            font-family: var(--font-primary);
+            background-color: rgb(0, 0, 0);
+            padding: .6rem;
+            width: 100%;
+            text-align: center;
+            color: white;
+            letter-spacing: 1px;
+            border-radius: var(--border-radius);
+        }
+
+        .btn-buy:hover {
+            letter-spacing: 2px;
+            transition: .3s ease-in-out;
+        }
+
+        .img-candle {
+            border-radius: var(--border-radius);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 16rem;
+            width: 30rem;
+        }
+
+        .tc-1 {
+            background-image: url("./img/tipoc/vainilla.jpeg");
+        }
+
+        .tc-2 {
+            background-image: url("./img/tipoc/lavanda.jpeg");
+        }
+
+        .tc-3 {
+            background-image: url("./img/tipoc/vainillacoco.jpeg");
+        }
+
+        .tc-4 {
+            background-image: url("./img/tipoc/nardo.jpeg");
+        }
+
+        .tc-5 {
+            background-image: url("./img/tipoc/bouquetfloral.jpeg");
+        }
+
+        .ta1 {
+            background-image: url("./img/tipoa1/a1.jpeg");
+        }
+
+        .ta2 {
+            background-image: url("./img/tipoa2/formatodiamante.jpeg");
+        }
+
+        .ta2-2 {
+            background-image: url("./img/tipoa2/formatocorona.jpeg");
+        }
+
+        .ta3-1 {
+            background-image: url("./img/tipoa3/cafe.jpeg");
+        }
+
+        .ta3-2 {
+            background-image: url("./img/tipoa3/limon.jpeg");
+        }
+
+        .ta3-3 {
+            background-image: url("./img/tipoa3/chicle.jpeg");
+        }
+
+        .tb1-1 {
+            background-image: url("./img/tipob1/lavanda.jpeg");
+        }
+
+        .tb1-2 {
+            background-image: url("./img/tipob1/vainilla.jpeg");
+        }
+
+        .tb1-3 {
+            background-image: url("./img/tipob1/limon.jpeg");
+        }
+
+        .tb1-4 {
+            background-image: url("./img/tipob1/nardo.jpeg");
+        }
+
+        .tb1-5 {
+            background-image: url("./img/tipob1/vainillacoco.jpeg");
+        }
+
+        .tb1-6 {
+            background-image: url("./img/tipob1/bouquetfloral.jpeg");
+        }
+
+        .tb2-1 {
+            background-image: url("./img/tipob2/bouquetfloral.jpeg");
+        }
+
+        .tb2-2 {
+            background-image: url("./img/tipob2/chicle.jpeg");
+        }
+
+        .tb2-3 {
+            background-image: url("./img/tipob2/lavanda.jpeg");
+        }
+
+        .tb2-4 {
+            background-image: url("./img/tipob2/nardo.jpeg");
+        }
+
+        .tb2-5 {
+            background-image: url("./img/tipob2/vainilla.jpeg");
+        }
+
+        .tb2-6 {
+            background-image: url("./img/tipob2/vainillacoco.jpeg");
+        }
+
+        .tb3-1 {
+            background-image: url("./img/tipob3/cafe.jpeg");
+        }
+
+        .tb3-2 {
+            background-image: url("./img/tipob3/chicle.jpeg");
+        }
+
+        .tb3-3 {
+            background-image: url("./img/tipob3/citronella.jpeg");
+        }
+
+        .tb3-4 {
+            background-image: url("./img/tipob3/eucalipto.jpeg");
+        }
+
+        .tb3-5 {
+            background-image: url("./img/tipob3/limon.jpeg");
+        }
+
+        .tz-1 {
+            background-image: url("./img/tipoz/cheeky.jpeg");
+        }
+
+        .tz-2 {
+            background-image: url("./img/tipoz/chicle.jpeg");
+        }
+    }
+}
+
+
+
+
+
+
 /* MEDIAQUERIES */
 
 @media screen and (max-width: 1854px) {
