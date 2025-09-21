@@ -651,8 +651,6 @@ h1 {
 
     header {
 
-
-
         nav {
             display: none;
             background-color: rgb(235, 235, 235);
@@ -662,6 +660,11 @@ h1 {
             padding: 1rem;
             top: 6rem;
             border-bottom: 1px solid black;
+        }
+
+        nav.active {
+            display: block;
+            text-align: center;
         }
 
 

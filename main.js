@@ -18,9 +18,16 @@ candles.forEach((candle) => {
 });
 
 let hamburger = document.querySelector(".hamburger");
+let nav = document.querySelector("nav");
 let navAll = document.querySelectorAll("header nav ul li a");
 
 hamburger.addEventListener('click', () => {
+    nav.classList.toggle("active");
 
+    navAll.forEach((a) => {
+        a.addEventListener('click', () => {
+            nav.classList.remove("active");
+        });
+    });
 
 });
