@@ -832,6 +832,10 @@ footer {
         }
     }
 
+    .ch {
+        background-color: yellow;
+    }
+
     footer {
         margin-top: 6rem;
     }
