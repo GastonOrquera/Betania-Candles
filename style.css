@@ -728,6 +728,9 @@ footer {
         }
     }
 
+    footer {
+        margin: 1rem;
+    }
 
 }
 
