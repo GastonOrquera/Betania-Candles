@@ -24,30 +24,6 @@ header {
     border-bottom: 1px solid black;
     padding: 0 2rem;
 
-    nav ul {
-        display: flex;
-        gap: 2rem;
-
-        li {
-            list-style: none;
-            padding: 1rem;
-
-        }
-
-        li:hover a {
-            border-bottom: 2px solid black;
-            transition: .3s ease-in-out;
-        }
-
-        a {
-            font-size: 1.05rem;
-            border-bottom: 2px solid transparent;
-        }
-
-    }
-
-
-
     a {
         font-family: var(--font-primary);
         color: black;
@@ -55,26 +31,47 @@ header {
         text-transform: uppercase;
         letter-spacing: 1px;
     }
+}
 
-    .hamburger {
-        cursor: pointer;
-        display: none;
+nav ul {
+    display: flex;
+    gap: 2rem;
 
-        div {
-            background-color: black;
-            width: 18px;
-            height: 2px;
-        }
+    li {
+        list-style: none;
+        padding: 1rem;
+
+    }
+
+    li:hover a {
+        border-bottom: 2px solid black;
+        transition: .3s ease-in-out;
+    }
+
+    a {
+        /* font-size: 1.05rem; */
+        border-bottom: 2px solid transparent;
     }
 
 }
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+
+    div {
+        background-color: black;
+        width: 18px;
+        height: 2px;
+    }
+}
+
 
 a {
     text-decoration: none;
 }
 
 .bi-whatsapp {
-    color: rgb(24, 179, 24);
     margin-left: .4rem;
 }
 
@@ -189,7 +186,7 @@ h1 {
         padding: 1.6rem;
 
         border-radius: var(--border-radius);
-        border: 1px solid black;
+        border: 1px solid rgba(0, 0, 0, 0.116);
         color: black;
 
         /* .span-black {
@@ -267,7 +264,6 @@ h1 {
         border-radius: .6rem;
     }
 
-
     .blac {
         background-color: black;
         color: white;
@@ -286,17 +282,13 @@ h1 {
             }
         }
 
-
     }
 }
-
-
 
 /* Seccion tipo C */
 
 .conteiner {
     padding: 2rem;
-
 
     .flex {
         font-family: var(--font-primary);
@@ -326,7 +318,6 @@ h1 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-        width: min-content;
 
         .product {
             background-color: rgb(235, 235, 235);
@@ -336,6 +327,7 @@ h1 {
             gap: 1rem;
             border-radius: var(--border-radius);
             border: 1px solid rgba(0, 0, 0, 0.116);
+            /* border: 1px solid rgba(0, 0, 0, 0.267); */
         }
 
         .box-candle {
@@ -378,7 +370,7 @@ h1 {
             background-size: cover;
             background-position: center;
             height: 16rem;
-            width: 30rem;
+            width: 29.7rem;
         }
 
         .tc-1 {
@@ -503,14 +495,81 @@ h1 {
     }
 }
 
+/* Footer */
+
+footer {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    border-bottom: none;
+    margin: 2rem;
+    margin-bottom: 0;
+    padding: 2rem;
+    border-radius: 2rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        font-family: var(--font-primary);
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        a {
+            color: white;
+            border-radius: 50%;
+            background-color: black;
+            padding: 2rem;
+            font-size: 2rem;
+            position: relative;
+        }
+
+        .a-f:hover {
+            transition: .5s ease-in-out;
+            background-color: transparent;
+            color: black;
+        }
 
 
 
+        a .bi-whatsapp:hover {
+            color: black;
+        }
 
+        i {
+            /* background-color: yellow; */
+
+            position: absolute;
+            right: .9rem;
+            bottom: .7rem;
+        }
+
+    }
+}
 
 /* MEDIAQUERIES */
 
-@media screen and (max-width: 1854px) {
+@media screen and (max-width: 1920px) {
+
+    .conteiner {
+        .velas-conteiner {
+            .product {
+                .img-candle {
+                    width: 26rem;
+                }
+            }
+        }
+    }
+
     .section-velas {
 
         .candle {
@@ -523,6 +582,19 @@ h1 {
             height: 20rem;
         }
     }
+}
+
+@media screen and (max-width: 1736px) {
+    .conteiner {
+        .velas-conteiner {
+            .product {
+                .img-candle {
+                    width: 20rem;
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 1698px) {
@@ -557,6 +629,16 @@ h1 {
             height: 14rem;
         }
     }
+
+    .conteiner {
+        .velas-conteiner {
+            .product {
+                .img-candle {
+                    width: 16rem;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1408px) {
@@ -575,6 +657,18 @@ h1 {
         .img {
             width: 10rem;
             height: 10rem;
+        }
+    }
+
+    .conteiner {
+        .velas-conteiner {
+            grid-template-columns: repeat(2, 1fr);
+
+            .product {
+                .img-candle {
+                    width: 20rem;
+                }
+            }
         }
     }
 }
@@ -624,13 +718,23 @@ h1 {
         }
     }
 
+    .conteiner {
+        padding: 1rem;
+
+        .velas-conteiner {
+            .product {
+                .img-candle {
+                    width: 15rem;
+                }
+            }
+        }
+    }
+
 
 }
 
 @media screen and (max-width: 920px) {
-
     .section-velas {
-
         .conteiner-candles {
             .candle {
                 width: 100%;
@@ -641,13 +745,21 @@ h1 {
             width: 10rem;
             height: 10rem;
         }
-
     }
 
+    footer {
+        margin: 1rem;
+        flex-direction: column;
 
+        nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+
+    }
 }
 
-@media screen and (max-width: 788px) {
+@media screen and (max-width: 802px) {
 
     header {
 
@@ -708,6 +820,18 @@ h1 {
 
 
 
+    }
+
+    .conteiner {
+        .velas-conteiner {
+            grid-template-columns: repeat(1, 1fr);
+
+            .product {
+                .img-candle {
+                    width: 14rem;
+                }
+            }
+        }
     }
 
 
