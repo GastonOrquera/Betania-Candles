@@ -692,8 +692,6 @@ footer {
     }
 }
 
-
-
 @media screen and (max-width: 1000px) {
     header {
         padding: 0 1rem;
@@ -759,7 +757,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 802px) {
+@media screen and (max-width: 804px) {
 
     header {
 
@@ -834,6 +832,13 @@ footer {
         }
     }
 
+    footer {
+        margin-top: 6rem;
+    }
+
+    footer .flex {
+        margin-top: 2rem;
+    }
 
 }
 
