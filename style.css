@@ -716,6 +716,11 @@ footer {
         }
     }
 
+    .velas-conteiner .product .box-candle .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
     .conteiner {
         padding: 1rem;
 
